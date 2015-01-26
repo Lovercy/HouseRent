@@ -1,7 +1,10 @@
 package com.rent.model;
 
-public class UserAndApartment {
-    private Integer id;
+public class UserAndApartment implements java.io.Serializable{
+   
+	private static final long serialVersionUID = -6463121824175220413L;
+
+	private Integer id;
 
     private Integer riid;
 

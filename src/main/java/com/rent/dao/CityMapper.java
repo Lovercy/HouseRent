@@ -13,7 +13,9 @@ public interface CityMapper {
 
     City selectByPrimaryKey(Integer cid);
     
-    List<City> selectAllColumn();
+    List<City> selectProColumn();
+    
+    List<City> selectChilColumn(Integer proid);
 
     int updateByPrimaryKeySelective(City record);
 

@@ -27,11 +27,11 @@
     where Id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" parameterType="com.rent.model.Person" >
-    insert into person (Id, userId, personname, 
+    insert into person (userId, personname, 
       sex, age, homecity, 
       telphone, iswork, workname, 
       newhome)
-    values (#{id,jdbcType=INTEGER}, #{userid,jdbcType=INTEGER}, #{personname,jdbcType=VARCHAR}, 
+    values (#{userid,jdbcType=INTEGER}, #{personname,jdbcType=VARCHAR}, 
       #{sex,jdbcType=INTEGER}, #{age,jdbcType=INTEGER}, #{homecity,jdbcType=INTEGER}, 
       #{telphone,jdbcType=VARCHAR}, #{iswork,jdbcType=INTEGER}, #{workname,jdbcType=VARCHAR}, 
       #{newhome,jdbcType=INTEGER})

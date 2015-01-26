@@ -13,9 +13,15 @@ public class CityService implements ICityService {
 	@Autowired
 	private CityMapper cityMapper;
 	
+	@Override
+	public List<City> getProCityList() {
+		List<City> result=cityMapper.selectProColumn();
+		return result;
+	}
 	
-	public List<City> getCityList() {
-		List<City> result=cityMapper.selectAllColumn();
+	@Override
+	public List<City> getChilCityList(Integer proid) {
+		List<City> result=cityMapper.selectChilColumn(proid);
 		return result;
 	}
 	

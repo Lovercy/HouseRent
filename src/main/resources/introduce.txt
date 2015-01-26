@@ -1,0 +1,14 @@
+Bootstrap framework:
+	bootstrap/css/bootstrap.min.css
+    bootstrap/css/bootstrap-responsive.min.css
+main styles:
+	css/style.css
+	
+
+=============================================================================================
+js:
+	js/jquery.min.js
+    js/jquery-migrate.min.js
+    js/jquery.actual.min.js
+    lib/validation/jquery.validate.min.js
+    bootstrap/js/bootstrap.min.js

@@ -25,7 +25,7 @@ public class TestMybatis_Junit {
 	}
 	@Test
 	public void testJuint() {
-		List<City> citys=cityService.getCityList();
+		List<City> citys=cityService.getProCityList();
 		logger.info(JSON.toJSONString(citys));
 	}
 

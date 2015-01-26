@@ -4,12 +4,16 @@
   <resultMap id="BaseResultMap" type="com.rent.model.City" >
     <id column="cId" property="cid" jdbcType="INTEGER" />
     <result column="cityname" property="cityname" jdbcType="VARCHAR" />
+    <result column="proId" property="proid" jdbcType="INTEGER"/>
   </resultMap>
   <sql id="Base_Column_List" >
     cId, cityname
   </sql>
-  <select id="selectAllColumn" resultMap="BaseResultMap">
-  	select * from city
+  <select id="selectProColumn" resultMap="BaseResultMap">
+  	select * from city where proId is null
+  </select>
+  <select id="selectChilColumn" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+  	select * from city where proId=#{proid,jdbcType=INTEGER}
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 

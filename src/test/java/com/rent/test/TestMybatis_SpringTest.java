@@ -19,7 +19,7 @@ public class TestMybatis_SpringTest {
 	
 	@Test
 	public void testSpring() {
-		List<City> citys=cityService.getCityList();
+		List<City> citys=cityService.getProCityList();
 		for(int i=0;i<citys.size();i++){
 			System.out.println(citys.get(i)==null?"null":citys.get(i).getCityname());
 		}

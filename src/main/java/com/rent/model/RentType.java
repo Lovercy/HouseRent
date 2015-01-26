@@ -1,7 +1,10 @@
 package com.rent.model;
 
-public class RentType {
-    private Integer typeid;
+public class RentType implements java.io.Serializable{
+    
+	private static final long serialVersionUID = -8902252417053972845L;
+
+	private Integer typeid;
 
     private String typename;
 

@@ -1,9 +1,14 @@
 package com.rent.model;
 
-public class City {
-    private Integer cid;
+public class City implements java.io.Serializable{
+   
+	private static final long serialVersionUID = 9202464813821946744L;
+
+	private Integer cid;
 
     private String cityname;
+    
+    private Integer proid;
 
     public Integer getCid() {
         return cid;
@@ -20,4 +25,12 @@ public class City {
     public void setCityname(String cityname) {
         this.cityname = cityname == null ? null : cityname.trim();
     }
+
+	public Integer getProid() {
+		return proid;
+	}
+
+	public void setProid(Integer proid) {
+		this.proid = proid;
+	}
 }

@@ -1,7 +1,10 @@
 package com.rent.model;
 
-public class User {
-    private Integer userid;
+public class User implements java.io.Serializable{
+
+	private static final long serialVersionUID = -5820192331167085482L;
+
+	private Integer userid;
 
     private String username;
 
